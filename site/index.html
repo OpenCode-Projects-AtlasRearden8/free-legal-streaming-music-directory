@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free &amp; Legal Streaming Music Directory — Asdale Dynamics, LLC</title>
+<meta name="description" content="A friendly directory of free and legal ways to hear music and calm audio: library streaming passes, public-radio apps, live coding-game stations, archives for older music, and royalty-free players — with the free-tier fine print called out honestly.">
+<style>
+  :root {
+    --bg: #faf7f2;
+    --card: #ffffff;
+    --ink: #2d2a26;
+    --muted: #6b6459;
+    --accent: #b3541e;
+    --accent-dark: #8a3f14;
+    --accent-soft: #f6e8dc;
+    --border: #e8e0d4;
+    --fine: #7a5c2e;
+    --fine-bg: #fdf6ea;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(160deg, #2d2a26 0%, #463c30 100%);
+    color: #f8f1e5;
+    text-align: center;
+    padding: 3.5rem 1.2rem 3rem;
+  }
+  header h1 { font-size: clamp(1.7rem, 4vw, 2.6rem); font-weight: normal; letter-spacing: 0.5px; }
+  header p { max-width: 46rem; margin: 0.9rem auto 0; color: #d9cfc0; font-size: 1.05rem; }
+  .kicker {
+    display: inline-block;
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent-soft);
+    border: 1px solid rgba(246,232,220,0.35);
+    padding: 0.25rem 0.8rem;
+    border-radius: 999px;
+    margin-bottom: 1.1rem;
+  }
+  main { max-width: 72rem; margin: 0 auto; padding: 2.2rem 1.2rem 3rem; }
+  section { margin-top: 2.6rem; scroll-margin-top: 1rem; }
+  section > h2 {
+    font-size: 1.45rem;
+    font-weight: normal;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.4rem;
+  }
+  section > h2 .num {
+    color: var(--accent);
+    font-family: 'Courier New', monospace;
+    margin-right: 0.4rem;
+  }
+  section > p.catintro { color: var(--muted); max-width: 44rem; margin-bottom: 1.2rem; }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+    gap: 1.1rem;
+  }
+  card, .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.2rem 1.3rem 1.1rem;
+    box-shadow: 0 1px 3px rgba(45,42,38,0.05);
+    display: flex;
+    flex-direction: column;
+  }
+  .card h3 { font-size: 1.12rem; font-weight: normal; margin-bottom: 0.15rem; }
+  .card h3 a { color: var(--accent-dark); text-decoration: none; border-bottom: 1px dotted var(--accent); }
+  .card h3 a:hover { color: var(--accent); }
+  .card .url {
+    font-family: 'Courier New', monospace;
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-bottom: 0.6rem;
+    word-break: break-all;
+  }
+  .card p { font-size: 0.93rem; flex-grow: 1; }
+  .fineprint {
+    margin-top: 0.8rem;
+    background: var(--fine-bg);
+    border-left: 3px solid var(--fine);
+    border-radius: 0 6px 6px 0;
+    padding: 0.55rem 0.75rem;
+    font-size: 0.85rem;
+    color: var(--fine);
+  }
+  .fineprint strong { font-variant: small-caps; letter-spacing: 0.5px; }
+  nav.toc {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem 1.4rem;
+    margin-top: 1.6rem;
+  }
+  nav.toc a { color: var(--accent-dark); text-decoration: none; margin-right: 1.4rem; white-space: nowrap; display: inline-block; padding: 0.15rem 0; }
+  nav.toc a:hover { text-decoration: underline; }
+  .docs-nav { margin-top: 2.2rem; text-align: center; color: var(--muted); font-size: 0.9rem; }
+  .docs-nav a { color: var(--accent-dark); text-decoration: none; border-bottom: 1px dotted var(--accent); }
+  footer {
+    background: var(--card);
+    border-top: 1px solid var(--border);
+    text-align: center;
+    padding: 1.8rem 1rem 2.2rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  footer a { color: var(--accent-dark); text-decoration: none; border-bottom: 1px dotted var(--accent); }
+  .divider { text-align: center; color: var(--border); letter-spacing: 6px; margin: 1rem 0 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="kicker">Free &amp; legal · fine print included</div>
+  <h1>The Free &amp; Legal Streaming Music Directory</h1>
+  <p>Warm, honest guides to hearing music and calm audio without paying a subscription: library streaming passes, public-radio apps, live coding-game stations, archives of older music, and royalty-free players.</p>
+</header>
+
+<main>
+
+  <nav class="toc">
+    <a href="#library">1 · Library streaming</a>
+    <a href="#radio">2 · Public radio</a>
+    <a href="#stations">3 · Coding-game stations</a>
+    <a href="#archives">4 · Older-music archives</a>
+    <a href="#royaltyfree">5 · Royalty-free players</a>
+  </nav>
+
+  <section id="library">
+    <h2><span class="num">1</span> Library streaming passes</h2>
+    <p class="catintro">The most underused free-music trick in existence: your public library card. Libraries pay real licensing fees so you can stream — and sometimes keep — enormous catalogs.</p>
+    <div class="cards">
+      <div class="card">
+        <h3><a href="https://www.hoopladigital.com/">Hoopla</a></h3>
+        <div class="url">hoopladigital.com</div>
+        <p>Full music albums (plus movies, ebooks, comics) borrowed through your library — clean, ad-free, browser or app. A genuinely deep catalog spanning pop, classical, jazz, and soundtracks.</p>
+        <div class="fineprint"><strong>Fine print:</strong> needs a valid library card from a participating library; monthly borrows are capped (often 5–30, set by your library).</div>
+      </div>
+      <div class="card">
+        <h3><a href="https://www.freegalmusic.com/">Freegal Music</a></h3>
+        <div class="url">freegalmusic.com</div>
+        <p>A big slice of Sony Music, with weekly MP3 downloads you keep forever, no due date. Unlimited streaming plus a ration of keep-for-keeps — a lovely two-speed model.</p>
+        <div class="fineprint"><strong>Fine print:</strong> library card from a Freegal-participating library required; downloads are rationed (classically 5 MP3s a week).</div>
+      </div>
+      <div class="card">
+        <h3><a href="https://www.naxosmusiclibrary.com/home">Naxos Music Library</a></h3>
+        <div class="url">naxosmusiclibrary.com</div>
+        <p>The classical-lover's lane: 200+ labels' complete albums licensed to library systems, with curated playlists, jazz, and world music in the mix. Log in with your card and it all opens.</p>
+        <div class="fineprint"><strong>Fine print:</strong> your library must subscribe; coverage skews to bigger systems, and peak hours can queue you.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="radio">
+    <h2><span class="num">2</span> Public-radio apps and streams</h2>
+    <p class="catintro">Listener-funded radio: donations instead of interruptions. These are the stations people leave on for entire workdays.</p>
+    <div class="cards">
+      <div class="card">
+        <h3><a href="https://www.npr.org/">NPR</a></h3>
+        <div class="url">npr.org</div>
+        <p>Tasteful music curation, live concerts, and sessions, with the free NPR One app for gentle radio listening. Home base for the whole public-radio way of hearing.</p>
+        <div class="fineprint"><strong>Fine print:</strong> curated segments rather than full-album play; the app will ask, politely, for donations.</div>
+      </div>
+      <div class="card">
+        <h3><a href="https://www.kexp.org/">KEXP</a></h3>
+        <div class="url">kexp.org/listen</div>
+        <p>Seattle's beloved listener-powered station: DJs with real taste and thousands of live in-studio sessions archived free on YouTube. Weekday highs, 1990s weekends, global electronic shows.</p>
+        <div class="fineprint"><strong>Fine print:</strong> frequent funding drives (they're listener-funded by design); YouTube session archive carries YouTube ads.</div>
+      </div>
+      <div class="card">
+        <h3><a href="https://www.yourclassical.org/">YourClassical</a></h3>
+        <div class="url">yourclassical.org</div>
+        <p>Classical Minnesota Public Radio's calm-audio gem: free 24/7 streams including "Peaceful Classical" and piano-only channels — a perfect low-effort focus soundtrack.</p>
+        <div class="fineprint"><strong>Fine print:</strong> continuous mixes only, no on-demand picking; the mobile app is smoother than the bare browser stream.</div>
+      </div>
+      <div class="card">
+        <h3><a href="https://www.wfmt.com/">WFMT</a></h3>
+        <div class="url">wfmt.com</div>
+        <p>Chicago's classical flagship: long-form programming and opera broadcasts with real announcers telling you what you just heard. Free web stream, respectful old-school radio.</p>
+        <div class="fineprint"><strong>Fine print:</strong> long-form means long — an evening opera is a commitment; listener-support mentions instead of ads.</div>
+      </div>
+      <div class="card">
+        <h3><a href="https://radio.garden/">Radio Garden</a></h3>
+        <div class="url">radio.garden</div>
+        <p>A spinning globe covered in live radio stations. Drag the earth, land somewhere, and instantly hear local radio — world music and voices you'd never find on any app chart.</p>
+        <div class="fineprint"><strong>Fine print:</strong> individual stations wobble in and out; it streams constantly, so mind your phone data plan.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stations">
+    <h2><span class="num">3</span> Live coding-game stations</h2>
+    <p class="catintro">Stations built around what you're <em>doing</em>: coding, gaming, deep focus. Community-voted game music, endless lofi, noncommercial chill radio.</p>
+    <div class="cards">
+      <div class="card">
+        <h3><a href="https://rainwave.cc/">Rainwave</a></h3>
+        <div class="url">rainwave.cc</div>
+        <p>Community interactive radio for video-game and anime music: songs spin up by live community vote, and the chat debates the canon while you code or game. A station you participate in.</p>
+        <div class="fineprint"><strong>Fine print:</strong> the crowd controls the queue — trust the democracy or wait out a losing vote; requests and voting work best with a (free) account.</div>
+      </div>
+      <div class="card">
+        <h3><a href="https://somafm.com/">SomaFM</a></h3>
+        <div class="url">somafm.com</div>
+        <p>Noncommercial, listener-supported radio since 2000, with 30+ handcrafted channels. <em>Groove Salad</em> is the legendary ambient work companion — put it on for eight hours and forget it exists.</p>
+        <div class="fineprint"><strong>Fine print:</strong> twice-yearly pledge drives and honest requests for listener money — that's the entire catch. No accounts, no ads.</div>
+      </div>
+      <div class="card">
+        <h3><a href="https://chillhop.com/">Chillhop Music</a></h3>
+        <div class="url">chillhop.com</div>
+        <p>The famous chillhop/lofi radio built on a real, licensed catalog of their own — browsable by mood ("chill study beats," "sleepy," "jazzy &amp; mellow"). Independent team, quality catalog since 2013.</p>
+        <div class="fineprint"><strong>Fine print:</strong> the YouTube version carries standard ads (their own web player doesn't); it's continuous radio — no skipping.</div>
+      </div>
+      <div class="card">
+        <h3><a href="https://lofi.cafe/">LoFi Café</a></h3>
+        <div class="url">lofi.cafe</div>
+        <p>A quiet, gorgeous minimal website that is nothing but an endless lofi radio stream with a volume button. The zero-click, zero-login calm stream for when you just opened your laptop.</p>
+        <div class="fineprint"><strong>Fine print:</strong> one channel only — if lofi is not the calm flavor you wanted, it's a hard no.</div>
+      </div>
+      <div class="card">
+        <h3><a href="https://www.youtube.com/@LofiGirl">Lofi Girl (YouTube live)</a></h3>
+        <div class="url">youtube.com/@LofiGirl</div>
+        <p>The famous "beats to relax/study to" livestream, running around the clock since 2017: a girl studying with her cat, and beats. Hundreds of millions of study hours can't be wrong.</p>
+        <div class="fineprint"><strong>Fine print:</strong> it's YouTube, so periodic ads are the honest price; you can't skip or queue.</div>
+      </div>
+      <div class="card">
+        <h3><a href="https://www.ocremix.org/">OverClocked ReMix</a></h3>
+        <div class="url">ocremix.org</div>
+        <p>Thousands of peer-reviewed, fan-made remixes of video-game music — ~25 years of a fan project that became free art — with built-in streaming playlists you steer yourself.</p>
+        <div class="fineprint"><strong>Fine print:</strong> the original music still belongs to the game studios: free to listen, stream, and download, not licensed for commercial use.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="archives">
+    <h2><span class="num">4</span> Archives for older music</h2>
+    <p class="catintro">Historical, out-of-copyright, and public-domain recordings. Nobody is selling anything here — libraries and archives putting the past online for free.</p>
+    <div class="cards">
+      <div class="card">
+        <h3><a href="https://archive.org/details/audio">Internet Archive — Audio</a></h3>
+        <div class="url">archive.org/details/audio</div>
+        <p>A deep ocean of legal free audio: concert archives built on each band's taping policy, historical collections, radio programs, spoken word. Millions of items, streamed right in the browser.</p>
+        <div class="fineprint"><strong>Fine print:</strong> rights vary item by item — superb for listening, but clear rights before commercial reuse.</div>
+      </div>
+      <div class="card">
+        <h3><a href="https://archive.org/details/78rpm">IA 78 RPM Records</a></h3>
+        <div class="url">archive.org/details/78rpm</div>
+        <p>400,000+ digitized shellac records from 1898–1950s: jazz, blues, opera, comedy — the Great 78 Project. If you've wondered what the Gramophone era sounded like, here it is, crackles and all.</p>
+        <div class="fineprint"><strong>Fine print:</strong> pre-1924 US recordings are solidly public domain; later ones are mostly free to listen but not always free to reuse.</div>
+      </div>
+      <div class="card">
+        <h3><a href="https://archive.org/details/etree">IA Live Music Archive</a></h3>
+        <div class="url">archive.org/details/etree</div>
+        <p>Band-approved concert recordings — thousands of Grateful Dead shows plus hundreds of bands that explicitly allow audience taping. Full shows, free to stream.</p>
+        <div class="fineprint"><strong>Fine print:</strong> stream-vs-download rights depend on each band's policy; sound quality varies wildly (read the notes).</div>
+      </div>
+      <div class="card">
+        <h3><a href="https://www.loc.gov/collections/national-jukebox/">National Jukebox</a></h3>
+        <div class="url">loc.gov/collections/national-jukebox</div>
+        <p>The Library of Congress streaming tens of thousands of Victor, Columbia, and Edison-era discs from 1901–1925, with museum-grade metadata. The "hear the story behind the song" archive.</p>
+        <div class="fineprint"><strong>Fine print:</strong> streaming only — no downloads, and the player is an archive tool rather than a slick modern app.</div>
+      </div>
+      <div class="card">
+        <h3><a href="https://imslp.org/wiki/Main_Page">IMSLP</a></h3>
+        <div class="url">imslp.org</div>
+        <p>The great public-domain music library: hundreds of thousands of classical scores plus a large collection of performances of those works, from contributors worldwide.</p>
+        <div class="fineprint"><strong>Fine print:</strong> country-specific recording licenses (USA-only vs. worldwide labels); ads with a modest paid tier to remove them.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="royaltyfree">
+    <h2><span class="num">5</span> Royalty-free players</h2>
+    <p class="catintro">Music you're <em>licensed to use</em> in your own videos, podcasts, and projects — free. Read each license before a commercial project, and keep receipts.</p>
+    <div class="cards">
+      <div class="card">
+        <h3><a href="https://freemusicarchive.org/">Free Music Archive</a></h3>
+        <div class="url">freemusicarchive.org</div>
+        <p>Curated, clearly-labeled tracks from independent artists (CC BY, BY-SA, etc.), now run by WFMU. Browse by genre or filter by license so you know what you agreed to before you download.</p>
+        <div class="fineprint"><strong>Fine print:</strong> licenses vary per track — CC BY-NC tracks won't fit a monetized channel; hosts' content-ID systems can still flag some tracks.</div>
+      </div>
+      <div class="card">
+        <h3><a href="https://ccmixter.org/">ccMixter</a></h3>
+        <div class="url">ccmixter.org</div>
+        <p>The remix village of the Creative Commons world: musicians upload stems and mixes for others to remix, everything under explicit CC licenses. Genuine fun, unusual finds.</p>
+        <div class="fineprint"><strong>Fine print:</strong> license type varies by track (BY, SA, NC); production values range widely — it's a community, not a polished library.</div>
+      </div>
+      <div class="card">
+        <h3><a href="https://pixabay.com/music/">Pixabay Music</a></h3>
+        <div class="url">pixabay.com/music</div>
+        <p>A big royalty-free library with the friendliest starter terms in this category: free for commercial use, no attribution required, plain-English license, no account needed to download.</p>
+        <div class="fineprint"><strong>Fine print:</strong> Pixabay's own license (not CC); it 403-blocks automation — try a normal browser if it refuses you too.</div>
+      </div>
+      <div class="card">
+        <h3><a href="https://incompetech.com/music/royalty-free/">Incompetech</a></h3>
+        <div class="url">incompetech.com</div>
+        <p>Kevin MacLeod's shop of thousands of compositions ("Sneaky Snitch," "Carefree"…) — searchable by mood, and the soundtrack of a generation of indie films and games. CC BY: free, even commercially, with credit.</p>
+        <div class="fineprint"><strong>Fine print:</strong> attribution required (a paid license removes it if lines of credit offend you); old-school site, direct MP3s.</div>
+      </div>
+      <div class="card">
+        <h3><a href="https://www.bensound.com/">Bensound</a></h3>
+        <div class="url">bensound.com</div>
+        <p>Polished royalty-free stock music that's been a go-to for YouTube and small businesses for years, with genuinely beginner-friendly browsing by mood or intended use.</p>
+        <div class="fineprint"><strong>Fine print:</strong> the free license is CC-BY-style with required credit, limited to everyday productions; bigger commercial uses need paid licenses.</div>
+      </div>
+      <div class="card">
+        <h3><a href="https://musopen.org/">Musopen</a></h3>
+        <div class="url">musopen.org</div>
+        <p>Classical recordings of public-domain works, recorded and freed by a nonprofit with exactly that mission — plus public-domain sheet music. An odd and wonderful pairing.</p>
+        <div class="fineprint"><strong>Fine print:</strong> some downloads gate behind a membership; performance copyrights persist even when compositions are PD; it 403-blocks automation too.</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="docs-nav">
+    <p>This page mirrors the fuller written guides in the repository: the Markdown versions with warm, full-length blurbs live one folder up, in <a href="../docs/index.md">docs/index.md</a>.</p>
+  </div>
+
+</main>
+
+<footer>
+  <p>Directory and site by <strong>Asdale Dynamics, LLC</strong> · MIT licensed · no analytics, no keys, no personal data.</p>
+  <p class="divider">· · ·</p>
+  <p>Part of Dylan Asdale's beginner-friendly AI hub — <a href="https://dylanasdale.github.io/">dylanasdale.github.io</a> — explaining AI "like a friend would": plain English, step by step, never condescending.</p>
+</footer>
+
+</body>
+</html>
